@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Innovators Battle - My Website</title>
+    <style>
+        /* General Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #3c4a87;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Navigation Styling */
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            color: #fff;
+            padding: 15px 20px;
+            display: block;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover,
+        nav ul li:hover > a {
+            background-color: #3c4a87;
+        }
+
+        /* Dropdown Styling */
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            min-width: 200px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li a {
+            padding: 10px 15px;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 40px;
+            margin: 20px auto;
+            width: 80%;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #3c4a87;
+            margin-bottom: 20px;
+        }
+
+        p, ul {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
+        }
+
+        /* Button Styling */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #3c4a87;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #2d3772;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            section {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Personal Website</h1>
+        <p>Designed for the Web Innovators Battle</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li>
+                <a href="#experience">Experience</a>
+                <ul>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                </ul>
+            </li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to my personal website! Explore my academic background, experience, achievements, and projects as part of my portfolio for the Web Innovators Battle competition.</p>
+        <a href="#about" class="button">Learn More About Me</a>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! My name is Soumyadipta Bera, and I am currently pursuing a degree in CSE with a keen interest in Artificial Intelligence and Data Science. This website is part of the Web Innovators Battle and showcases my journey in the field of technology.</p>
+    </section>
+
+    <section id="education">
+        <h2>Educational Background</h2>
+        <ul>
+            <li>Bachelor of Technology in Computer Science - University of Engineering and Management (2024-2028)</li>
+            <li>Certification in Data Science - Coursera</li>
+            <li>Certification in Python Programming - NPTEL</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li>Internship at ABC Company - Worked on developing machine learning models for predictive analysis in healthcare.</li>
+            <li>Research Assistant at University of Engineering and Management - Focus on AI-driven natural language processing.</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>AI-Based Chatbot:</strong> Developed a chatbot to enhance customer service interactions using natural language processing techniques.</li>
+            <li><strong>Healthcare Predictive Analytics:</strong> Created a machine learning model to predict patient outcomes based on medical data.</li>
+        </ul>
+    </section>
+
+    <section id="achievements">
+        <h2>Awards and Achievements</h2>
+        <ul>
+            <li>Winner of XYZ Hackathon 2024</li>
+            <li>Recipient of the Best Student Researcher Award 2024</li>
+            <li>Published a paper on "Machine Learning in Healthcare" in ABC Journal</li>
+        </ul>
+    </section>
+
+    <section id="events">
+        <h2>Events (Organized/Attended)</h2>
+        <ul>
+            <li>Organized XYZ AI Workshop (2024)</li>
+            <li>Attended International Conference on AI and Data Science (2024)</li>
+        </ul>
+    </section>
+
+    <section id="courses">
+        <h2>Courses Completed</h2>
+        <ul>
+            <li>Data Science Fundamentals - Coursera</li>
+            <li>Introduction to AI - NPTEL</li>
+            <li>Python for Data Science - LinkedIn Learning</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: berasoumyadipta@gmail.com</p>
+        <p>Phone: +916294065311</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/soumyadipta-bera-1803611aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Soumyadipta Bera</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Soumyadipta Bera - All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
